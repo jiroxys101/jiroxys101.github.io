@@ -1,16 +1,98 @@
 {
   "vaultName": "Brainiac",
-  "lastExport": 1731954191805,
+  "lastExport": 1731961834219,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha ctp-accent-blue anp-h1-red anp-h1-divider anp-h2-peach anp-h3-yellow anp-h4-green anp-h5-teal anp-h6-mauve anp-decoration-toggle anp-bold-red anp-italic-blue anp-highlight-yellow anp-file-icons anp-collapse-folders anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-bg-fix rainbow-repeat-11 rainbow-color-1-mauve rainbow-color-2-red rainbow-color-3-maroon rainbow-color-4-peach rainbow-color-5-yellow rainbow-color-6-green rainbow-color-7-teal rainbow-color-8-sky rainbow-color-9-sapphire rainbow-color-10-blue rainbow-color-11-lavender anp-theme-ext-dark anp-theme-ext-amoled ctp-nord-light ctp-nord-darker is-adj-rll check-text AT-row",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
+    "Business/Meeting Notes/Business Building Seminars/2024-03-10 - Sunday, March 10th, 2024.md",
+    "Business/Meeting Notes/Business Building Seminars/2024-05-19 - Sunday, May 19th, 2024.md",
+    "Business/Meeting Notes/Business Building Seminars/2024-11-09 - BBS - Shivaram & Anjali Kumar.md",
+    "Business/Meeting Notes/Conferences/BWW FREE ENTERPRISE DAY 2024/Free Enterprise Day 2024 - Session Notes.md",
+    "Business/Meeting Notes/Conferences/BWW FREE ENTERPRISE DAY 2024/Map of Contents - BWW FED 2024.md",
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Map of Contents - Gala Spring Leadership 2024.md",
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Saturday, April 27th, 2024.md",
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Spring Leadership Session One - Friday, April 26th, 2024.md",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-09 - FIRST SESSION.md",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-10 - SECOND SESSION.md",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-10 - THIRD SESSION.md",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/1616431991717.jpeg",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/Action Items After Summer Conference.md",
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/IMG-20240809-WA0004.jpg",
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Map of Contents - GALA WINTER JAM 2024.md",
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 1.md",
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 2.md",
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 3.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Khalid & Rumana Motorwala.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Sunil & Meena 1.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Tanmay & Rashmi.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/BP Hosting Guidelines.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Hosting for Iselin Board Plan.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2023-01-03 - Tuesday, January 3rd, 2023.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2023-10-03 - Ajmani ECS.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2023-12-12 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-03-05 - Tuesday, March 5th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-03-12 - Tuesday, March 12th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024 .Tuesday.April-2nd.2024___08.35.14PM.excalidraw.png",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024 .Tuesday.April-2nd.2024___08.35.14PM.excalidraw.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-09 - Tuesday, April 9th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-09 - Tuesday, April 9th, 2024 .Tuesday.April-9th.2024___09.56.16PM.excalidraw.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-30 - Tuesday, April 30th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-30 - Tuesday, April 30th, 2024 .Tuesday.April-30th.2024___08.23.14PM.excalidraw.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-07 - Tuesday, May 8th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-21 - Tuesday, May 21st, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-28 - Tuesday, May 28th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-04 - Tuesday, June 4th, 2024.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-18 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-25 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar .excalidraw.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar .excalidraw.png",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-08-13 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-08-20 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-10-08 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/2024-11-05 - E-Commerce Seminar.md",
+    "Business/Meeting Notes/E-Commerce Seminar/Pasted image 20241008213742.jpg",
+    "Business/Meeting Notes/Leadership/2024-06-27 - BBIs & Up Zoom Call.md",
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 - FRIDAY.md",
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 - SATURDAY.md",
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 .Friday.June-7th.2024___10.29.33PM.excalidraw.png",
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 .Friday.June-7th.2024___10.29.33PM.excalidraw.md",
+    "Business/Meeting Notes/Leadership/Ajmani Winter Promotion - 2024-01-20.md",
+    "Business/Meeting Notes/Leadership/Sunday, March 10th, 2024.md",
+    "Business/Meeting Notes/PASE/2024-05-02 - Friday, May 2nd, 2024.md",
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE.md",
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE .excalidraw.png",
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE .excalidraw.md",
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE _0.excalidraw.md",
+    "Business/Meeting Notes/PASE/2024-07-26 - Kumar Team PASE.md",
+    "Business/Meeting Notes/PASE/2024-09-27 - Combined Ajmani Team PASE.md",
+    "Business/Meeting Notes/PASE/2024-10-11 - Kumar Team PASE Meeting.md",
     "Business/Meeting Notes/PASE/2024-11-15 - Kumar Team PASE Meeting.md",
+    "Business/Meeting Notes/PASE/Pasted image 20240503210909.png",
+    "Business/Meeting Notes/PASE/Training - 2022-12-09.md",
+    "Business/Meeting Notes/PASE/Training - Nuts & Bolts PASE - 2023-02-24.md",
+    "Business/Meeting Notes/PASE/Untitled.md",
+    "Business/Meeting Notes/PASE/VERN.png",
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH.md",
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH .excalidraw.png",
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH .excalidraw.md",
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH _0.excalidraw.png",
+    "Business/Resources/AICVision20K/New Partner Resources/YouTube Video Links.md",
+    "Resources/PDFs/Books/Leading in Tough Times - Overcome Even the Greatest Challenges with Courage and Confidence.pdf",
+    "Resources/PDFs/Books/The 21 Irrefutable Laws of Leadership.pdf",
+    "Resources/PDFs/06-24 - Game Planning Notes.pdf",
+    "Resources/PDFs/2024-05-07 - ECS notes.pdf",
+    "Resources/PDFs/Artistry Signature Select™ Purifying Mask.pdf",
+    "Resources/PDFs/Artistry Skin Nutrition Defying Serum.pdf",
+    "Resources/PDFs/Nutrilite Advanced Omega.pdf",
+    "Resources/PDFs/Reservation Confirmation - 3515599878.PDF",
+    "Resources/PDFs/Solo Leveling - RPG Tasks v2.pdf",
+    "lib/media/pasted-image-20240806222356.png",
     "lib/media/qr-code.jpg",
-    "lib/media/artistry-signature-select™-purifying-mask.pdf",
-    "lib/media/nutrilite-advanced-omega.pdf",
-    "lib/media/artistry-skin-nutrition-defying-serum.pdf",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -42,7 +124,10 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
-    "lib/styles/snippets.css"
+    "lib/styles/snippets.css",
+    "lib/media/artistry-signature-select™-purifying-mask.pdf",
+    "lib/media/nutrilite-advanced-omega.pdf",
+    "lib/media/artistry-skin-nutrition-defying-serum.pdf"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -91,7 +176,7 @@
       ]
     },
     "lib/media/qr-code.jpg": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 17123,
       "exportedPath": "lib/media/qr-code.jpg",
       "dependencies": []
@@ -115,195 +200,772 @@
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1731954191805,
-      "sourceSize": 2959,
+      "modifiedTime": 1731961834219,
+      "sourceSize": 89352,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1731954191805,
-      "sourceSize": 354,
+      "modifiedTime": 1731961834219,
+      "sourceSize": 8800,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 131018,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 62012,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 272312,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1731954191805,
-      "sourceSize": 487,
+      "modifiedTime": 1731961834219,
+      "sourceSize": 458,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 202,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1731954191805,
+      "modifiedTime": 1731961834219,
       "sourceSize": 451993,
       "exportedPath": "lib/styles/snippets.css",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Business Building Seminars/2024-03-10 - Sunday, March 10th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 4910,
+      "exportedPath": "business/meeting-notes/business-building-seminars/2024-03-10-sunday,-march-10th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Business Building Seminars/2024-05-19 - Sunday, May 19th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2351,
+      "exportedPath": "business/meeting-notes/business-building-seminars/2024-05-19-sunday,-may-19th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Business Building Seminars/2024-11-09 - BBS - Shivaram & Anjali Kumar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 676,
+      "exportedPath": "business/meeting-notes/business-building-seminars/2024-11-09-bbs-shivaram-&-anjali-kumar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/BWW FREE ENTERPRISE DAY 2024/Free Enterprise Day 2024 - Session Notes.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1477,
+      "exportedPath": "business/meeting-notes/conferences/bww-free-enterprise-day-2024/free-enterprise-day-2024-session-notes.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/BWW FREE ENTERPRISE DAY 2024/Map of Contents - BWW FED 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 638,
+      "exportedPath": "business/meeting-notes/conferences/bww-free-enterprise-day-2024/map-of-contents-bww-fed-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Map of Contents - Gala Spring Leadership 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 414,
+      "exportedPath": "business/meeting-notes/conferences/gala-spring-leadership-2024/map-of-contents-gala-spring-leadership-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Saturday, April 27th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2189,
+      "exportedPath": "business/meeting-notes/conferences/gala-spring-leadership-2024/saturday,-april-27th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SPRING LEADERSHIP 2024/Spring Leadership Session One - Friday, April 26th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2213,
+      "exportedPath": "business/meeting-notes/conferences/gala-spring-leadership-2024/spring-leadership-session-one-friday,-april-26th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-09 - FIRST SESSION.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 7760,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/2024-08-09-first-session.html",
+      "dependencies": [
+        "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg"
+      ]
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-10 - SECOND SESSION.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2723,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/2024-08-10-second-session.html",
+      "dependencies": [
+        "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg"
+      ]
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/2024-08-10 - THIRD SESSION.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 955,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/2024-08-10-third-session.html",
+      "dependencies": [
+        "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg",
+        "business/meeting-notes/conferences/gala-summer-conference-2024/1616431991717.jpeg"
+      ]
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/1616431991717.jpeg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 27481,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/1616431991717.jpeg",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/Action Items After Summer Conference.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 367,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/action-items-after-summer-conference.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA SUMMER CONFERENCE 2024/IMG-20240809-WA0004.jpg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 172237,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Map of Contents - GALA WINTER JAM 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 638,
+      "exportedPath": "business/meeting-notes/conferences/gala-winter-jam-2024/map-of-contents-gala-winter-jam-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 1.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2238,
+      "exportedPath": "business/meeting-notes/conferences/gala-winter-jam-2024/winter-jam-2024-session-1.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 2.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1229,
+      "exportedPath": "business/meeting-notes/conferences/gala-winter-jam-2024/winter-jam-2024-session-2.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Conferences/GALA WINTER JAM 2024/Winter Jam 2024 - Session 3.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 905,
+      "exportedPath": "business/meeting-notes/conferences/gala-winter-jam-2024/winter-jam-2024-session-3.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1970,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/board-plan-hosting-script.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Khalid & Rumana Motorwala.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3516,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/board-plan-hosting-script-khalid-&-rumana-motorwala.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Sunil & Meena 1.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1931,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/board-plan-hosting-script-sunil-&-meena-1.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Board Plan Hosting Script - Tanmay & Rashmi.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1562,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/board-plan-hosting-script-tanmay-&-rashmi.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/BP Hosting Guidelines.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1585,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/bp-hosting-guidelines.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Board Plan/Hosting for Iselin Board Plan.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 463,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/board-plan/hosting-for-iselin-board-plan.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2023-01-03 - Tuesday, January 3rd, 2023.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1061,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2023-01-03-tuesday,-january-3rd,-2023.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2023-10-03 - Ajmani ECS.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 551,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2023-10-03-ajmani-ecs.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2023-12-12 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 977,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2023-12-12-e-commerce-seminar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-03-05 - Tuesday, March 5th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1475,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-03-05-tuesday,-march-5th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-03-12 - Tuesday, March 12th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2354,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-03-12-tuesday,-march-12th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 501,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-02-tuesday,-april-2nd,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024 .Tuesday.April-2nd.2024___08.35.14PM.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 110184,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-02-tuesday,-april-2nd,-2024-.tuesday.april-2nd.2024___08.35.14pm.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-02 - Tuesday, April 2nd, 2024 .Tuesday.April-2nd.2024___08.35.14PM.excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 74624,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-02-tuesday,-april-2nd,-2024-.tuesday.april-2nd.2024___08.35.14pm.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-09 - Tuesday, April 9th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 227,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-09-tuesday,-april-9th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-09 - Tuesday, April 9th, 2024 .Tuesday.April-9th.2024___09.56.16PM.excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 533965,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-09-tuesday,-april-9th,-2024-.tuesday.april-9th.2024___09.56.16pm.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-30 - Tuesday, April 30th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 579,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-30-tuesday,-april-30th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-04-30 - Tuesday, April 30th, 2024 .Tuesday.April-30th.2024___08.23.14PM.excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1913,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-04-30-tuesday,-april-30th,-2024-.tuesday.april-30th.2024___08.23.14pm.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-07 - Tuesday, May 8th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1093,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-05-07-tuesday,-may-8th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-21 - Tuesday, May 21st, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1342,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-05-21-tuesday,-may-21st,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-05-28 - Tuesday, May 28th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 538,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-05-28-tuesday,-may-28th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-04 - Tuesday, June 4th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 719,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-06-04-tuesday,-june-4th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-18 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3174,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-06-18-e-commerce-seminar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-06-25 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 608,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-06-25-e-commerce-seminar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 4179,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar.html",
+      "dependencies": [
+        "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar-.excalidraw.png"
+      ]
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar .excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 17919,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar-.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-07-02 - E-Commerce Seminar .excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 74262,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar-.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-08-13 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 5699,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-08-13-e-commerce-seminar.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240806222356.png"
+      ]
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-08-20 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 503,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-08-20-e-commerce-seminar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-10-08 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1459,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-10-08-e-commerce-seminar.html",
+      "dependencies": [
+        "business/meeting-notes/e-commerce-seminar/pasted-image-20241008213742.jpg"
+      ]
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/2024-11-05 - E-Commerce Seminar.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 461,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-11-05-e-commerce-seminar.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/E-Commerce Seminar/Pasted image 20241008213742.jpg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 9313,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/pasted-image-20241008213742.jpg",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/2024-06-27 - BBIs & Up Zoom Call.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 498,
+      "exportedPath": "business/meeting-notes/leadership/2024-06-27-bbis-&-up-zoom-call.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 - FRIDAY.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 8141,
+      "exportedPath": "business/meeting-notes/leadership/ajmani-leadership-at-seven-springs-2024-friday.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 - SATURDAY.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3745,
+      "exportedPath": "business/meeting-notes/leadership/ajmani-leadership-at-seven-springs-2024-saturday.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 .Friday.June-7th.2024___10.29.33PM.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 11367,
+      "exportedPath": "business/meeting-notes/leadership/ajmani-leadership-at-seven-springs-2024-.friday.june-7th.2024___10.29.33pm.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/AJMANI LEADERSHIP AT SEVEN SPRINGS 2024 .Friday.June-7th.2024___10.29.33PM.excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 369800,
+      "exportedPath": "business/meeting-notes/leadership/ajmani-leadership-at-seven-springs-2024-.friday.june-7th.2024___10.29.33pm.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/Ajmani Winter Promotion - 2024-01-20.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 963,
+      "exportedPath": "business/meeting-notes/leadership/ajmani-winter-promotion-2024-01-20.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Leadership/Sunday, March 10th, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 969,
+      "exportedPath": "business/meeting-notes/leadership/sunday,-march-10th,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/2024-05-02 - Friday, May 2nd, 2024.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 372,
+      "exportedPath": "business/meeting-notes/pase/2024-05-02-friday,-may-2nd,-2024.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3014,
+      "exportedPath": "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase.html",
+      "dependencies": [
+        "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.png",
+        "business/meeting-notes/pase/vern.png"
+      ]
+    },
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE .excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 425244,
+      "exportedPath": "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE .excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 30834,
+      "exportedPath": "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/2024-07-19 - Combined Ajmani Team PASE _0.excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 183903,
+      "exportedPath": "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-_0.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/2024-07-26 - Kumar Team PASE.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 8215,
+      "exportedPath": "business/meeting-notes/pase/2024-07-26-kumar-team-pase.html",
+      "dependencies": [
+        "business/meeting-notes/pase/vern.png"
+      ]
+    },
+    "Business/Meeting Notes/PASE/2024-09-27 - Combined Ajmani Team PASE.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 6063,
+      "exportedPath": "business/meeting-notes/pase/2024-09-27-combined-ajmani-team-pase.html",
+      "dependencies": [
+        "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.png",
+        "business/meeting-notes/pase/vern.png"
+      ]
+    },
+    "Business/Meeting Notes/PASE/2024-10-11 - Kumar Team PASE Meeting.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3441,
+      "exportedPath": "business/meeting-notes/pase/2024-10-11-kumar-team-pase-meeting.html",
+      "dependencies": [
+        "lib/media/qr-code.jpg"
+      ]
+    },
+    "Business/Meeting Notes/PASE/Pasted image 20240503210909.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 842496,
+      "exportedPath": "business/meeting-notes/pase/pasted-image-20240503210909.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/Training - 2022-12-09.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1372,
+      "exportedPath": "business/meeting-notes/pase/training-2022-12-09.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/Training - Nuts & Bolts PASE - 2023-02-24.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 2509,
+      "exportedPath": "business/meeting-notes/pase/training-nuts-&-bolts-pase-2023-02-24.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/Untitled.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 45,
+      "exportedPath": "business/meeting-notes/pase/untitled.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/PASE/VERN.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 64219,
+      "exportedPath": "business/meeting-notes/pase/vern.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 3185,
+      "exportedPath": "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish.html",
+      "dependencies": [
+        "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-.excalidraw.png"
+      ]
+    },
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH .excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 96864,
+      "exportedPath": "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH .excalidraw.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 18556,
+      "exportedPath": "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-.excalidraw.html",
+      "dependencies": []
+    },
+    "Business/Meeting Notes/Trainings/2024-07-13 - KUMAR TEAM COVERDISH _0.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 47976,
+      "exportedPath": "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-_0.excalidraw.png",
+      "dependencies": []
+    },
+    "Business/Resources/AICVision20K/New Partner Resources/YouTube Video Links.md": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 112,
+      "exportedPath": "business/resources/aicvision20k/new-partner-resources/youtube-video-links.html",
+      "dependencies": []
+    },
+    "Resources/PDFs/Books/Leading in Tough Times - Overcome Even the Greatest Challenges with Courage and Confidence.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1269797,
+      "exportedPath": "resources/pdfs/books/leading-in-tough-times-overcome-even-the-greatest-challenges-with-courage-and-confidence.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Books/The 21 Irrefutable Laws of Leadership.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 679771,
+      "exportedPath": "resources/pdfs/books/the-21-irrefutable-laws-of-leadership.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/06-24 - Game Planning Notes.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 574062,
+      "exportedPath": "resources/pdfs/06-24-game-planning-notes.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/2024-05-07 - ECS notes.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 1836704,
+      "exportedPath": "resources/pdfs/2024-05-07-ecs-notes.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Artistry Signature Select™ Purifying Mask.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 725101,
+      "exportedPath": "resources/pdfs/artistry-signature-select™-purifying-mask.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Artistry Skin Nutrition Defying Serum.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 796375,
+      "exportedPath": "resources/pdfs/artistry-skin-nutrition-defying-serum.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Nutrilite Advanced Omega.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 708473,
+      "exportedPath": "resources/pdfs/nutrilite-advanced-omega.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Reservation Confirmation - 3515599878.PDF": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 35006,
+      "exportedPath": "resources/pdfs/reservation-confirmation-3515599878.pdf",
+      "dependencies": []
+    },
+    "Resources/PDFs/Solo Leveling - RPG Tasks v2.pdf": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 195746,
+      "exportedPath": "resources/pdfs/solo-leveling-rpg-tasks-v2.pdf",
+      "dependencies": []
+    },
+    "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 172237,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/img-20240809-wa0004.jpg",
+      "dependencies": []
+    },
+    "business/meeting-notes/conferences/gala-summer-conference-2024/1616431991717.jpeg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 27481,
+      "exportedPath": "business/meeting-notes/conferences/gala-summer-conference-2024/1616431991717.jpeg",
+      "dependencies": []
+    },
+    "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar-.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 74262,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/2024-07-02-e-commerce-seminar-.excalidraw.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20240806222356.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 976539,
+      "exportedPath": "lib/media/pasted-image-20240806222356.png",
+      "dependencies": []
+    },
+    "business/meeting-notes/e-commerce-seminar/pasted-image-20241008213742.jpg": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 9313,
+      "exportedPath": "business/meeting-notes/e-commerce-seminar/pasted-image-20241008213742.jpg",
+      "dependencies": []
+    },
+    "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 425244,
+      "exportedPath": "business/meeting-notes/pase/2024-07-19-combined-ajmani-team-pase-.excalidraw.png",
+      "dependencies": []
+    },
+    "business/meeting-notes/pase/vern.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 64219,
+      "exportedPath": "business/meeting-notes/pase/vern.png",
+      "dependencies": []
+    },
+    "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-.excalidraw.png": {
+      "modifiedTime": 1731961834219,
+      "sourceSize": 96864,
+      "exportedPath": "business/meeting-notes/trainings/2024-07-13-kumar-team-coverdish-.excalidraw.png",
       "dependencies": []
     }
   }
