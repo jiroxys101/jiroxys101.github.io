@@ -1,0 +1,150 @@
+/* Save this as a CSS Snippet alternativeCheckboxes.css */
+
+/* Checkbox basic 1 */
+
+input[data-task="1"]:checked::after,
+li[data-task="1"]>input:checked::after,
+li[data-task="1"]>p>input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z'%3E%3C/path%3E%3C/svg%3E");
+    -webkit-mask-size: 100%;
+	
+}
+
+input[data-task="1"]:checked::before,
+li[data-task="1"]>input:checked::before,
+li[data-task="1"]>p>input:checked::before {
+    color: var(--checkbox-color);
+    margin: 0 3px;
+    position: absolute;
+    left: calc(var(--checkbox-size) * 1);
+    font-weight: bold;
+}
+
+input[data-task="1"]:checked,
+li[data-task="1"]>input:checked,
+li[data-task="1"]>p>input:checked {
+    --checkbox-color-hover: var(--color-yellow);
+    background-color: var(--color-yellow);
+    border-color: transparent;
+    /* border-radius: 50%; */
+
+}
+
+/* Checkbox Standard 2 */
+
+input[data-task="2"]:checked::after,
+li[data-task="2"]>input:checked::after,
+li[data-task="2"]>p>input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M2 8.99997H5V21H2C1.44772 21 1 20.5523 1 20V9.99997C1 9.44769 1.44772 8.99997 2 8.99997ZM7.29289 7.70708L13.6934 1.30661C13.8693 1.13066 14.1479 1.11087 14.3469 1.26016L15.1995 1.8996C15.6842 2.26312 15.9026 2.88253 15.7531 3.46966L14.5998 7.99997H21C22.1046 7.99997 23 8.8954 23 9.99997V12.1043C23 12.3656 22.9488 12.6243 22.8494 12.8658L19.755 20.3807C19.6007 20.7554 19.2355 21 18.8303 21H8C7.44772 21 7 20.5523 7 20V8.41419C7 8.14897 7.10536 7.89462 7.29289 7.70708Z'%3E%3C/path%3E%3C/svg%3E");
+    -webkit-mask-size: 100%;
+}
+
+input[data-task="2"]:checked::before,
+li[data-task="2"]>input:checked::before,
+li[data-task="2"]>p>input:checked::before {
+    color: var(--checkbox-color);
+    margin: 0 3px;
+    position: absolute;
+    left: calc(var(--checkbox-size) * 1);
+    font-weight: bold;
+}
+
+input[data-task="2"]:checked,
+li[data-task="2"]>input:checked,
+li[data-task="2"]>p>input:checked {
+    --checkbox-color-hover: var(--color-green);
+    background-color: var(--color-green);
+    border-color: transparent;
+    /* border-radius: 50%; */
+
+}
+
+/* Checkbox Ideal 3 */
+
+input[data-task="3"]:checked::after,
+li[data-task="3"]>input:checked::after,
+li[data-task="3"]>p>input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z'%3E%3C/path%3E%3C/svg%3E");
+    -webkit-mask-size: 100%;
+}
+
+input[data-task="3"]:checked::before,
+li[data-task="3"]>input:checked::before,
+li[data-task="3"]>p>input:checked::before {
+    color: var(--checkbox-color);
+    margin: 0 3px;
+    position: absolute;
+    left: calc(var(--checkbox-size) * 1);
+    font-weight: bold;
+}
+
+input[data-task="3"]:checked,
+li[data-task="3"]>input:checked,
+li[data-task="3"]>p>input:checked {
+    --checkbox-color-hover: var(--color-red);
+    background-color: var(--color-red);
+    border-color: transparent;
+    /* border-radius: 50%; */
+
+}
+
+/* Checkbox Optimal 4 */
+
+input[data-task="4"]:checked::after,
+li[data-task="4"]>input:checked::after,
+li[data-task="4"]>p>input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z'%3E%3C/path%3E%3C/svg%3E");
+    -webkit-mask-size: 100%;
+}
+
+input[data-task="4"]:checked::before,
+li[data-task="4"]>input:checked::before,
+li[data-task="4"]>p>input:checked::before {
+    color: var(--checkbox-color);
+    margin: 0 3px;
+    position: absolute;
+    left: calc(var(--checkbox-size) * 1);
+    font-weight: bold;
+}
+
+input[data-task="4"]:checked,
+li[data-task="4"]>input:checked,
+li[data-task="4"]>p>input:checked {
+    --checkbox-color-hover: var(--color-blue);
+    background-color: var(--color-blue);
+    border-color: transparent;
+    /* border-radius: 50%; */
+
+}
+
+/* Checkbox In Progress 0 */
+
+input[data-task="0"]:checked::after,
+li[data-task="0"]>input:checked::after,
+li[data-task="0"]>p>input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M6 4H4V2H20V4H18V6C18 7.61543 17.1838 8.91468 16.1561 9.97667C15.4532 10.703 14.598 11.372 13.7309 12C14.598 12.628 15.4532 13.297 16.1561 14.0233C17.1838 15.0853 18 16.3846 18 18V20H20V22H4V20H6V18C6 16.3846 6.81616 15.0853 7.8439 14.0233C8.54682 13.297 9.40202 12.628 10.2691 12C9.40202 11.372 8.54682 10.703 7.8439 9.97667C6.81616 8.91468 6 7.61543 6 6V4ZM8 4V6C8 6.68514 8.26026 7.33499 8.77131 8H15.2287C15.7397 7.33499 16 6.68514 16 6V4H8ZM12 13.2219C10.9548 13.9602 10.008 14.663 9.2811 15.4142C9.09008 15.6116 8.92007 15.8064 8.77131 16H15.2287C15.0799 15.8064 14.9099 15.6116 14.7189 15.4142C13.992 14.663 13.0452 13.9602 12 13.2219Z'%3E%3C/path%3E%3C/svg%3E");
+    -webkit-mask-size: 100%;
+}
+
+input[data-task="0"]:checked::before,
+li[data-task="0"]>input:checked::before,
+li[data-task="0"]>p>input:checked::before {
+    color: var(--checkbox-color);
+    margin: 0 3px;
+    position: absolute;
+    left: calc(var(--checkbox-size) * 1);
+    font-weight: bold;
+}
+
+input[data-task="0"]:checked,
+li[data-task="0"]>input:checked,
+li[data-task="0"]>p>input:checked {
+    --checkbox-color-hover: var(--color-purple);
+    background-color: var(--color-purple);
+    border-color: transparent;
+    /* border-radius: 50%; */
+
+}
+
+
+

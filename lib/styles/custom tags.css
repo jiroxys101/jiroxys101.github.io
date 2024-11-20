@@ -1,0 +1,124 @@
+/* for whatever reason as i tested this, i need to put "initialise",
+   else the .tag below it won't be captured by obsidian.
+   if removing works for you, can just remove */
+   .tag { }
+
+   .cm-hashtag,
+   .tag {
+       border: none;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       padding-block: 1px;
+       margin: 0px 0px;
+       cursor: pointer;
+   }
+   
+   /* border-radius and padding need to be separated as editing view
+      has split css selector for "#" and "<tag-word>" */
+   .tag {
+       border-radius: 14px;
+       padding-inline: 8px;
+   }
+   .cm-hashtag-begin {
+       border-top-left-radius: 14px;
+       border-bottom-left-radius: 14px;
+       padding-left: 8px;
+   }
+   .cm-hashtag-end {
+       border-top-right-radius: 14px;
+       border-bottom-right-radius: 14px;
+       padding-right: 8px;
+   }
+   
+   /* i comment out background-color as it doesn't look good on hover
+      due to how obsidian split between "#" and "<tag-word>" */
+   .cm-s-obsidian span.cm-hashtag:is(.cm-hashtag-begin,.cm-hashtag-end):hover,
+   .tag:hover {
+       color: white;
+       font-weight: bold;
+       /*
+       background-color: var(--text-accent-hover);
+       */
+   }
+   
+   /* attribute selector "$=" matches tags that ends with that word
+      where as "^=" matches tags that starts with that tag */
+   .cm-s-obsidian span.cm-hashtag[class$="subtask"],
+   .tag[href^="#subtask"] {
+       background-color: rgba(var(--color-purple-rgb), 0.1);
+   }
+   
+   .cm-s-obsidian span.cm-hashtag[class$="mandatory"],
+   .tag[href^="#mandatory"] {
+       background-color: rgba(var(--color-red-rgb), 0.1);
+       color: rgba(var(--color-red-rgb), 0.5);
+   }
+   
+   .cm-s-obsidian span.cm-hashtag[class$="optional"],
+   .tag[href^="#optional"] {
+       background-color: rgba(var(--color-green-rgb), 0.2);
+       color: rgba(var(--color-green-rgb), 0.9);
+   }
+   
+   .cm-s-obsidian span.cm-hashtag[class$="VCI"],
+   .tag[href^="#VCI"] {
+       background-color: rgba(0, 116, 255, 0.4);
+       color: rgba(255, 255, 255, 0.5);
+   }
+   
+   /* Print-specific styles */
+   @media print {
+       .cm-hashtag,
+       .tag {
+           border: none;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           padding-block: 1px;
+           margin: 0px 0px;
+           cursor: default; /* Disable pointer cursor for print */
+       }
+   
+       .tag {
+           border-radius: 14px;
+           padding-inline: 8px;
+       }
+   
+       .cm-hashtag-begin {
+           border-top-left-radius: 14px;
+           border-bottom-left-radius: 14px;
+           padding-left: 8px;
+       }
+   
+       .cm-hashtag-end {
+           border-top-right-radius: 14px;
+           border-bottom-right-radius: 14px;
+           padding-right: 8px;
+       }
+   
+       /* Print-specific color and background adjustments */
+       .cm-s-obsidian span.cm-hashtag[class$="subtask"],
+       .tag[href^="#subtask"] {
+           background-color: rgba(var(--color-purple-rgb), 0.05); /* Lighter background for print */
+       }
+   
+       .cm-s-obsidian span.cm-hashtag[class$="mandatory"],
+       .tag[href^="#mandatory"] {
+           background-color: rgba(var(--color-red-rgb), 0.05);
+           color: rgba(var(--color-red-rgb), 0.6); /* Slightly darker for better visibility in print */
+       }
+   
+       .cm-s-obsidian span.cm-hashtag[class$="optional"],
+       .tag[href^="#optional"] {
+           background-color: rgba(var(--color-green-rgb), 0.1);
+           color: rgba(var(--color-green-rgb), 0.85);
+       }
+   
+       .cm-s-obsidian span.cm-hashtag[class$="VCI"],
+       .tag[href^="#VCI"] {
+           background-color: rgba(0, 116, 255, 0.3);
+           color: rgba(255, 255, 255, 0.6);
+       }
+   }
+   

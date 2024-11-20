@@ -1,0 +1,13 @@
+/* 
+Hide and resize H1 style when it has a hr divider line immediately after.
+*/
+
+.HyperMD-header-1:has(+ .hr) {
+    opacity: 0;
+    font-size: 1px;
+}
+
+.cm-active.HyperMD-header-1:has(+ .hr) {
+    opacity: 100;
+    font-size: var(--h1-size);
+}
