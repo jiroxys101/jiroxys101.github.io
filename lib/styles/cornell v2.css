@@ -1,124 +1,78 @@
-/** Place this file in your $VAULT_NAME/.obsidian/snippets/ and enable the snippet in the Appearance Settings **/
-
-
+/* Define root variables for consistency */
 :root {
     --cue-width: 150px;
-    --cue-offset: var(--cue-width);
     --cue-line: 1px solid lightgrey;
+    --content-padding: 20px;
+    --max-width: 800px;
+    --font-family: "Arial", sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
 }
 
-.markdown-preview-view.cornell-note .markdown-preview-sizer,
-.markdown-source-view.cornell-note .markdown-preview-sizer {
-    max-width: var(--file-line-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-inline: 140px;
-    width: 100%;
-}
-
-.markdown-preview-view.cornell-note .markdown-preview-sizer > div ,
-.markdown-source-view.cornell-note .markdown-preview-sizer > div {
-    max-width: var(--max-width);
-    width: var(--line-width);
-    margin-inline: var(--content-margin)!important;
-}
-
-.markdown-preview-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre),
-.markdown-source-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre)  {
-    border-left: var(--cue-line);
-    padding-left: 20px;
-}
-
-.markdown-preview-view.cornell-note aside:first-line, 
-.markdown-source-view.cornell-note aside:first-line {
-    font-weight: 700;
-}
-
-.markdown-preview-view.cornell-note aside, 
-.markdown-source-view.cornell-note aside {
-    font-style: italic;
-    white-space: normal;
-    font-family: var(--font-text);
-    font-size: var(--font-adaptive-normal);
-    font-weight: var(--normal-weight);
+/* General styling for body and container */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
     line-height: var(--line-height);
-    padding: 0px 8px 0px 0px;
-    margin-right: 10px;
-    left: 15px;
-    max-width: var(--cue-width);
-    position: absolute;
-    word-wrap: break-words; /* Ensure text wraps only at the end of a word */
-    hyphens: auto; /* Add hyphenation to help with word breaks */
-} 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+}
 
-.markdown-preview-view.cornell-note div.cues-header, 
-.markdown-source-view.cornell-note div.cues-header {
-    /* Keep sync with "h1, .markdown-rendered h1" selector */
-    max-width: var(--cue-width);
-    white-space: normal;
+/* Main content area */
+.document-container > .markdown-preview-view {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: var(--content-padding);
+    background-color: #fff;
+    border-left: var(--cue-line);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cue/Notes section styling */
+.document-container > .markdown-preview-view .markdown-preview-sizer > div::before {
+    content: attr(data-cue); /* Placeholder for cues, can be set via data attributes */
+    position: absolute;
     width: var(--cue-width);
-    left: 15px;
-    top: 20;
-    padding: 0px 8px 0px 0px;
-    letter-spacing: -0.015em;
-    line-height: var(--h1-line-height);
-    color: var(--h1-color);
-    font-family: var(--h1-font);
+    left: -180px; /* Offset from content */
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    white-space: pre-wrap;
+}
+
+/* Headers within the notes */
+.document-container > .markdown-preview-view h1,
+.document-container > .markdown-preview-view h2,
+.document-container > .markdown-preview-view h3 {
+    margin: 1.5em 0 0.5em;
+    font-weight: bold;
+}
+
+.document-container > .markdown-preview-view h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--cue-line);
+    padding-bottom: 0.3em;
+}
+
+.document-container > .markdown-preview-view h2 {
     font-size: 1.5em;
-    font-style: var(--h1-style);
-    font-variant: var(--h1-variant);
-    font-weight: var(--h1-weight);
-    position: absolute;
-    word-wrap: normal; /* Ensure text wraps only at the end of a word */
-    hyphens: auto; /* Add hyphenation to help with word breaks */
 }
 
-.markdown-preview-view.cornell-note summary, 
-.markdown-source-view.cornell-note summary {
-    display: none;
+.document-container > .markdown-preview-view h3 {
+    font-size: 1.3em;
 }
 
+/* Print-specific styles */
 @media print {
-    :root {
-        --cue-width: 150px;
-        --cue-offset: var(--cue-width);
-        --cue-line: 1px solid lightgrey;
+    body {
+        background-color: #fff;
     }
 
-    .markdown-preview-view.cornell-note .markdown-preview-sizer,
-    .markdown-source-view.cornell-note .markdown-preview-sizer {
-        max-width: var(--file-line-width);
-        margin-inline: 140px;
-        width: 100%;
-    }
-
-    .markdown-preview-view.cornell-note .markdown-preview-sizer > div,
-    .markdown-source-view.cornell-note .markdown-preview-sizer > div {
-        max-width: var(--max-width);
-        width: var(--line-width);
-        margin-inline: var(--content-margin)!important;
-    }
-
-    .markdown-preview-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre),
-    .markdown-source-view.cornell-note .markdown-preview-sizer > div:has(p, ul, ol, pre) {
-        border-left: var(--cue-line);
-        padding-left: 20px;
-    }
-
-    .markdown-preview-view.cornell-note aside, 
-    .markdown-source-view.cornell-note aside {
-        font-style: italic;
-        white-space: normal;
-        font-family: var(--font-text);
-        font-size: var(--font-adaptive-normal);
-        font-weight: var(--normal-weight);
-        line-height: var(--line-height);
-        padding: 0px 8px;
-        margin-right: 10px;
-        left: 15px;
-        max-width: var(--cue-width);
-        position: absolute;
-        word-wrap: break-words;
-        hyphens: auto;
+    .document-container > .markdown-preview-view {
+        border: none;
+        box-shadow: none;
     }
 }
