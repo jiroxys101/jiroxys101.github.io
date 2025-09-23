@@ -18,6 +18,12 @@
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
+        :root {
+            --theme-primary: #D97706;
+            --theme-primary-light: #FFFBEB;
+            --theme-primary-border: #FBBF24;
+            --theme-text-accent: #b45309;
+        }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #FDFBF8;
@@ -27,12 +33,33 @@
             transition: color 0.3s, border-bottom-color 0.3s;
         }
         .nav-link:hover, .nav-link.active {
-            color: #D97706; 
-            border-bottom-color: #D97706;
+            color: var(--theme-primary); 
+            border-bottom-color: var(--theme-primary);
         }
         .tab-button.active {
-            background-color: #D97706;
+            background-color: var(--theme-primary);
             color: #FFFFFF;
+        }
+        .city-button {
+            background-color: #f3f4f6;
+            color: #4b5563;
+        }
+        .city-button.active {
+            background-color: var(--theme-primary);
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .accent-bg {
+            background-color: var(--theme-primary-light);
+        }
+        .accent-text {
+            color: var(--theme-text-accent);
+        }
+        .accent-border {
+            border-color: var(--theme-primary-border);
+        }
+        .accent-text-strong {
+             color: var(--theme-primary);
         }
         .chart-container {
             position: relative; 
@@ -71,16 +98,16 @@
 
         <section id="summary" class="mb-16 scroll-mt-20">
             <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Executive Summary: Your Trip to Rome</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Executive Summary: Your Trip to <span id="summary-city">Rome</span></h2>
                 <p class="text-lg text-gray-600 mb-6">This plan recommends a 4-day trip to **Rome, Italy**, from **October 5-9, 2025**. Rome is the top-scoring destination, offering an unparalleled blend of world-class cuisine, ancient history, stunning architecture, and vibrant culture that perfectly matches your group's interests. The weather in early October is typically mild and sunny, ideal for exploration.</p>
-                <div class="grid md:grid-cols-2 gap-6 bg-amber-50 p-6 rounded-lg">
+                <div class="grid md:grid-cols-2 gap-6 accent-bg p-6 rounded-lg transition-colors duration-500">
                     <div>
-                        <p class="text-sm font-semibold text-amber-800 uppercase">Recommendation</p>
+                        <p class="text-sm font-semibold accent-text uppercase transition-colors duration-500">Recommendation</p>
                         <p class="text-2xl font-bold text-gray-900">Separate Bookings</p>
                         <p class="text-sm text-gray-600">This approach offers greater flexibility, better lodging (apartment-style), and overall superior value, while staying comfortably within budget.</p>
                     </div>
                     <div class="text-left md:text-right">
-                        <p class="text-sm font-semibold text-amber-800 uppercase">Estimated Total Cost (4 Adults)</p>
+                        <p class="text-sm font-semibold accent-text uppercase transition-colors duration-500">Estimated Total Cost (4 Adults)</p>
                         <p class="text-2xl font-bold text-gray-900">$10,485 USD</p>
                         <p class="text-sm text-gray-600">($2,621 per person), including a 10% contingency.</p>
                     </div>
@@ -90,8 +117,13 @@
 
         <section id="analysis" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-2">Destination Analysis</h2>
-            <p class="text-lg text-center text-gray-600 mb-8">After evaluating several European cities against your criteria, three finalists were selected. Rome emerged as the clear winner based on the scoring rubric.</p>
+            <p class="text-lg text-center text-gray-600 mb-8">Select a destination below to explore its scores and a tailored itinerary.</p>
             <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                 <div id="city-selector" class="flex justify-center space-x-2 mb-8">
+                    <button class="city-button py-2 px-4 text-sm font-medium rounded-md" data-city="Rome">🇮🇹 Rome</button>
+                    <button class="city-button py-2 px-4 text-sm font-medium rounded-md" data-city="Madrid">🇪🇸 Madrid</button>
+                    <button class="city-button py-2 px-4 text-sm font-medium rounded-md" data-city="Athens">🇬🇷 Athens</button>
+                </div>
                 <div class="chart-container mb-8">
                     <canvas id="destinationChart"></canvas>
                 </div>
@@ -104,7 +136,7 @@
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-2">Booking Strategy: Separate vs. Package</h2>
             <p class="text-lg text-center text-gray-600 mb-8">We compared booking flights and lodging separately against an all-in-one vacation package. Separate bookings provide the best value and flexibility for your group.</p>
             <div class="grid lg:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-amber-500">
+                <div class="bg-white p-8 rounded-xl shadow-lg border-2 accent-border transition-colors duration-500">
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">🏆 Recommendation: Separate Bookings</h3>
                     <p class="mb-6 text-gray-600">This option provides superior lodging in a 2-bedroom apartment for more space and privacy, better cancellation flexibility, and ultimately a lower overall cost.</p>
                     <div class="space-y-4">
@@ -145,9 +177,9 @@
             <div>
                 <div class="mb-4 flex justify-center space-x-2 rounded-lg bg-gray-200 p-1">
                     <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day1">Day 1: Arrival & Immersion</button>
-                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day2">Day 2: Ancient Wonders</button>
-                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day3">Day 3: Art & Grandeur</button>
-                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day4">Day 4: Fountains & Flavors</button>
+                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day2">Day 2</button>
+                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day3">Day 3</button>
+                    <button class="tab-button flex-1 py-2 px-4 text-sm font-medium rounded-md transition" data-tab="day4">Day 4</button>
                 </div>
 
                 <div id="itinerary-content" class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
@@ -171,7 +203,7 @@
                                 <li class="flex justify-between"><span>Lodging</span> <strong>$3,455</strong></li>
                                 <li class="flex justify-between"><span>Food & Activities</span> <strong>$1,410</strong></li>
                                 <li class="flex justify-between border-t pt-2 mt-2"><span>Subtotal</span> <strong>$10,485</strong></li>
-                                <li class="flex justify-between text-amber-700"><span>Contingency (10%)</span> <strong>$953</strong></li>
+                                <li class="flex justify-between accent-text transition-colors duration-500"><span>Contingency (10%)</span> <strong>$953</strong></li>
                                 <li class="flex justify-between text-lg font-bold border-t pt-2 mt-2"><span>Grand Total</span> <strong>$11,438</strong></li>
                             </ul>
                         </div>
@@ -183,17 +215,17 @@
                         <div class="p-4 bg-gray-50 rounded-lg">
                             <p class="font-bold">Flights: United UA41 (EWR-FCO)</p>
                             <p class="text-sm">Dep: Oct 4, 8:40 PM EDT → Arr: Oct 5, 11:15 AM CEST</p>
-                            <a href="#" class="text-sm text-amber-600 hover:underline">Book on United.com &rarr;</a>
+                            <a href="#" class="text-sm accent-text-strong hover:underline transition-colors duration-500">Book on United.com &rarr;</a>
                         </div>
                         <div class="p-4 bg-gray-50 rounded-lg">
                             <p class="font-bold">Lodging: Navona Queen Rooftop</p>
                             <p class="text-sm">Check-in: Oct 5 → Check-out: Oct 9 (4 nights)</p>
-                             <a href="#" class="text-sm text-amber-600 hover:underline">Book on Booking.com &rarr;</a>
+                             <a href="#" class="text-sm accent-text-strong hover:underline transition-colors duration-500">Book on Booking.com &rarr;</a>
                         </div>
                         <div class="p-4 bg-gray-50 rounded-lg">
                             <p class="font-bold">Airport Transfer: Welcome Pickups</p>
                             <p class="text-sm">Pre-booked private transfer (~€60)</p>
-                             <a href="#" class="text-sm text-amber-600 hover:underline">Book Transfer &rarr;</a>
+                             <a href="#" class="text-sm accent-text-strong hover:underline transition-colors duration-500">Book Transfer &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -204,10 +236,10 @@
                         <li><strong>ETIAS:</strong> As of 2025, US citizens will need an ETIAS authorization for entry. Apply online at least 72 hours before departure.</li>
                         <li><strong>Travel Insurance:</strong> Purchase comprehensive coverage for medical emergencies and trip cancellation.</li>
                         <li><strong>Payment:</strong> Notify banks of travel dates. Use credit cards with no foreign transaction fees. Withdraw some Euros from an ATM upon arrival for small purchases.</li>
-                        <li><strong>Connectivity:</strong> Purchase an eSIM (e.g., Airalo) before you leave for easy data access upon landing. Download offline Google Maps for Rome.</li>
-                        <li><strong>Power Adapters:</strong> Italy uses Type F sockets. Pack at least two universal adapters.</li>
-                        <li><strong>Emergency Contacts:</strong> Local emergency number is 112. Save the address of your lodging and the US Embassy in Rome.</li>
-                        <li><strong>Reservations:</strong> Book tours (Colosseum, Vatican) and special-occasion dinners at least 3-4 weeks in advance.</li>
+                        <li><strong>Connectivity:</strong> Purchase an eSIM (e.g., Airalo) before you leave for easy data access upon landing. Download offline Google Maps for your chosen city.</li>
+                        <li><strong>Power Adapters:</strong> Italy & Greece use Type F. Spain uses Type F. Pack universal adapters.</li>
+                        <li><strong>Emergency Contacts:</strong> Local emergency number is 112. Save the address of your lodging and the US Embassy in your destination.</li>
+                        <li><strong>Reservations:</strong> Book major tours and special-occasion dinners at least 3-4 weeks in advance.</li>
                      </ul>
                  </div>
             </div>
@@ -225,6 +257,12 @@
         document.addEventListener('DOMContentLoaded', function () {
             
             let currentCity = 'Rome';
+            
+            const themes = {
+                Rome: { primary: '#D97706', primaryLight: '#FFFBEB', primaryBorder: '#FBBF24', textAccent: '#b45309' },
+                Madrid: { primary: '#DC2626', primaryLight: '#FEE2E2', primaryBorder: '#F87171', textAccent: '#b91c1c' },
+                Athens: { primary: '#2563EB', primaryLight: '#DBEAFE', primaryBorder: '#60A5FA', textAccent: '#1e40af' }
+            };
 
             const cityData = {
                 Rome: {
@@ -267,238 +305,22 @@
 
             const itineraryData = {
                 rome: {
-                    day1: {
-                        title: 'Day 1: Arrival & Historic Heart (Oct 5)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (11:15 AM)</h4>
-                                <p>Arrive at Rome Fiumicino (FCO). Clear immigration and collect bags. Meet your pre-booked driver from Welcome Pickups (~45 min transfer to city center).</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:30 PM)</h4>
-                                <p>Check into your apartment. Drop luggage and enjoy a light lunch at a nearby cafe. Afterwards, take a leisurely stroll to the <strong class="font-semibold">Pantheon</strong> to marvel at its architectural genius, followed by the vibrant <strong class="font-semibold">Piazza Navona</strong> with its stunning fountains.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (7:30 PM)</h4>
-                                <p>Enjoy a relaxed dinner at <strong class="font-semibold">Armando al Pantheon</strong> (book 4 weeks ahead) for classic Roman cuisine. This will be an easy first evening to help adjust to the time zone.</p>
-                            </div>
-                        </div>
-                    `
-                },
-                day2: {
-                    title: 'Day 2: Ancient Wonders (Oct 6)',
-                    content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (9:00 AM)</h4>
-                                <p>Embark on a pre-booked small-group tour of the <strong class="font-semibold">Colosseum, Roman Forum, and Palatine Hill</strong>. This covers the engineering, history, and cultural interests of the group. (Book via GetYourGuide/Viator 4-6 weeks in advance).</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:30 PM)</h4>
-                                <p>After a traditional Roman lunch near the Forum, enjoy some downtime. Optional split: Sridhar & Rijul could visit the <strong class="font-semibold">Capitoline Museums</strong> for more history, while Aparna & Annie could explore the charming Monti neighborhood for unique boutiques.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (8:00 PM)</h4>
-                                <p>Dinner in the lively Trastevere district at <strong class="font-semibold">Tonnarello</strong>, famous for its pasta served in pans. Enjoy a post-dinner stroll through the cobblestone streets.</p>
-                            </div>
-                        </div>
-                    `
-                },
-                day3: {
-                    title: 'Day 3: Art, Faith & Grandeur (Oct 7)',
-                    content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (8:00 AM)</h4>
-                                <p>Early start with a pre-booked "skip-the-line" tour of the <strong class="font-semibold">Vatican Museums, Sistine Chapel, and St. Peter's Basilica</strong>. This is essential to avoid hours-long queues and is a highlight for art and architecture interests.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (2:00 PM)</h4>
-                                <p>After lunch, the group can split. Aparna and Annie can enjoy world-class shopping along <strong class="font-semibold">Via del Corso</strong> and near the Spanish Steps. Rijul might enjoy the unique <strong class="font-semibold">Leonardo da Vinci Experience</strong> museum, which showcases his engineering and artistic genius.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (7:30 PM)</h4>
-                                <p>A special-occasion dinner at <strong class="font-semibold">Ad Hoc Ristorante</strong> near Piazza del Popolo, known for its creative take on Italian classics and extensive wine list (book well in advance).</p>
-                            </div>
-                        </div>
-                    `
-                },
-                day4: {
-                    title: 'Day 4: Fountains, Flavors & Farewell (Oct 8)',
-                    content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (8:30 AM)</h4>
-                                <p>Visit the <strong class="font-semibold">Trevi Fountain</strong> early to experience it with fewer crowds. Afterwards, enjoy a final Roman breakfast and climb the <strong class="font-semibold">Spanish Steps</strong> for city views. Stroll through the tranquil <strong class="font-semibold">Villa Borghese gardens</strong> for a dose of scenic nature.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:00 PM)</h4>
-                                <p>Engage in a hands-on <strong class="font-semibold">pasta-making class</strong>. This is a fun, interactive activity for the whole group that celebrates Italian cuisine. Several reputable schools are available to book online.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (7:00 PM)</h4>
-                                <p>Enjoy a farewell dinner at a rooftop restaurant with views of the city, such as <strong class="font-semibold">Terrazza Borromini</strong> (book ahead). Afterwards, head to FCO airport for your late-night flight home (many flights depart after 10 PM).</p>
-                            </div>
-                        </div>
-                    `
-                    }
+                    day1: { title: 'Day 1: Arrival & Historic Heart (Oct 5)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (11:15 AM)</h4><p>Arrive at Rome Fiumicino (FCO). Clear immigration and collect bags. Meet your pre-booked driver from Welcome Pickups (~45 min transfer to city center).</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:30 PM)</h4><p>Check into your apartment. Drop luggage and enjoy a light lunch at a nearby cafe. Afterwards, take a leisurely stroll to the <strong class="font-semibold">Pantheon</strong> to marvel at its architectural genius, followed by the vibrant <strong class="font-semibold">Piazza Navona</strong> with its stunning fountains.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (7:30 PM)</h4><p>Enjoy a relaxed dinner at <strong class="font-semibold">Armando al Pantheon</strong> (book 4 weeks ahead) for classic Roman cuisine. This will be an easy first evening to help adjust to the time zone.</p></div></div>` },
+                    day2: { title: 'Day 2: Ancient Wonders (Oct 6)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (9:00 AM)</h4><p>Embark on a pre-booked small-group tour of the <strong class="font-semibold">Colosseum, Roman Forum, and Palatine Hill</strong>. This covers the engineering, history, and cultural interests of the group. (Book via GetYourGuide/Viator 4-6 weeks in advance).</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:30 PM)</h4><p>After a traditional Roman lunch near the Forum, enjoy some downtime. Optional split: Sridhar & Rijul could visit the <strong class="font-semibold">Capitoline Museums</strong> for more history, while Aparna & Annie could explore the charming Monti neighborhood for unique boutiques.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (8:00 PM)</h4><p>Dinner in the lively Trastevere district at <strong class="font-semibold">Tonnarello</strong>, famous for its pasta served in pans. Enjoy a post-dinner stroll through the cobblestone streets.</p></div></div>` },
+                    day3: { title: 'Day 3: Art, Faith & Grandeur (Oct 7)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (8:00 AM)</h4><p>Early start with a pre-booked "skip-the-line" tour of the <strong class="font-semibold">Vatican Museums, Sistine Chapel, and St. Peter's Basilica</strong>. This is essential to avoid hours-long queues and is a highlight for art and architecture interests.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (2:00 PM)</h4><p>After lunch, the group can split. Aparna and Annie can enjoy world-class shopping along <strong class="font-semibold">Via del Corso</strong> and near the Spanish Steps. Rijul might enjoy the unique <strong class="font-semibold">Leonardo da Vinci Experience</strong> museum, which showcases his engineering and artistic genius.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (7:30 PM)</h4><p>A special-occasion dinner at <strong class="font-semibold">Ad Hoc Ristorante</strong> near Piazza del Popolo, known for its creative take on Italian classics and extensive wine list (book well in advance).</p></div></div>` },
+                    day4: { title: 'Day 4: Fountains, Flavors & Farewell (Oct 8)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (8:30 AM)</h4><p>Visit the <strong class="font-semibold">Trevi Fountain</strong> early to experience it with fewer crowds. Afterwards, enjoy a final Roman breakfast and climb the <strong class="font-semibold">Spanish Steps</strong> for city views. Stroll through the tranquil <strong class="font-semibold">Villa Borghese gardens</strong> for a dose of scenic nature.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:00 PM)</h4><p>Engage in a hands-on <strong class="font-semibold">pasta-making class</strong>. This is a fun, interactive activity for the whole group that celebrates Italian cuisine. Several reputable schools are available to book online.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (7:00 PM)</h4><p>Enjoy a farewell dinner at a rooftop restaurant with views of the city, such as <strong class="font-semibold">Terrazza Borromini</strong> (book ahead). Afterwards, head to FCO airport for your late-night flight home (many flights depart after 10 PM).</p></div></div>` }
                 },
                 madrid: {
-                    day1: {
-                        title: 'Day 1: Arrival & Royal Heart (Oct 5)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (11:00 AM)</h4>
-                                <p>Arrive at Madrid-Barajas (MAD). After clearing customs, take a pre-booked private transfer or a taxi to your hotel in the city center (~30 mins).</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:30 PM)</h4>
-                                <p>After check-in, have a relaxed lunch at <strong class="font-semibold">Mercado de San Miguel</strong>, an iconic food market. Then, take a walk through the grand <strong class="font-semibold">Plaza Mayor</strong> and see the Royal Palace from the outside.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (8:30 PM)</h4>
-                                <p>Dinner in the vibrant La Latina neighborhood, known for its tapas bars. Try <strong class="font-semibold">Juana La Loca</strong> for creative pintxos and a lively atmosphere.</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day2: {
-                        title: 'Day 2: Art & Culture (Oct 6)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (10:00 AM)</h4>
-                                <p>Immerse yourselves in art at the <strong class="font-semibold">Prado Museum</strong>, home to masterpieces by Goya, Velázquez, and El Greco. Book tickets online to avoid lines.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (2:00 PM)</h4>
-                                <p>After lunch, the group can split. Art lovers can continue to the <strong class="font-semibold">Reina Sofía Museum</strong> to see Picasso's "Guernica." Others can enjoy shopping on the Gran Vía or relax in the beautiful <strong class="font-semibold">El Retiro Park</strong>.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (9:00 PM)</h4>
-                                <p>Experience the passion of Spain with a high-quality <strong class="font-semibold">Flamenco show</strong> at a venue like Cardamomo or Corral de la Morería (book show with dinner).</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day3: {
-                        title: 'Day 3: Royal Residence & Local Life (Oct 7)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (9:30 AM)</h4>
-                                <p>Tour the opulent <strong class="font-semibold">Royal Palace of Madrid</strong>, the official residence of the Spanish Royal Family. The armory and grand halls are highlights for history and architecture fans.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:30 PM)</h4>
-                                <p>Explore the trendy Malasaña neighborhood for lunch and boutique shopping. For Rijul, a tour of the <strong class="font-semibold">Santiago Bernabéu Stadium</strong> (home of Real Madrid) could be an exciting alternative.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (8:00 PM)</h4>
-                                <p>Enjoy a fantastic steak dinner at <strong class="font-semibold">Casa Lucio</strong> or <strong class="font-semibold">La Cabaña Argentina</strong> to satisfy the group's culinary interests.</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day4: {
-                        title: 'Day 4: Views & Farewell Flavors (Oct 8)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (10:00 AM)</h4>
-                                <p>Visit the <strong class="font-semibold">Temple of Debod</strong>, an ancient Egyptian temple dismantled and rebuilt in Madrid. Then, take the cable car (<strong class="font-semibold">Teleférico</strong>) for panoramic city views.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:00 PM)</h4>
-                                <p>Enjoy a final Spanish meal and some souvenir shopping in the area around Puerta del Sol. Don't miss trying churros with chocolate at <strong class="font-semibold">Chocolatería San Ginés</strong>.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (7:00 PM)</h4>
-                                <p>Head to Madrid-Barajas (MAD) airport for your evening flight back home.</p>
-                            </div>
-                        </div>
-                        `
-                    }
+                    day1: { title: 'Day 1: Arrival & Royal Heart (Oct 5)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (11:00 AM)</h4><p>Arrive at Madrid-Barajas (MAD). After clearing customs, take a pre-booked private transfer or a taxi to your hotel in the city center (~30 mins).</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:30 PM)</h4><p>After check-in, have a relaxed lunch at <strong class="font-semibold">Mercado de San Miguel</strong>, an iconic food market. Then, take a walk through the grand <strong class="font-semibold">Plaza Mayor</strong> and see the Royal Palace from the outside.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (8:30 PM)</h4><p>Dinner in the vibrant La Latina neighborhood, known for its tapas bars. Try <strong class="font-semibold">Juana La Loca</strong> for creative pintxos and a lively atmosphere.</p></div></div>` },
+                    day2: { title: 'Day 2: Art & Culture (Oct 6)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (10:00 AM)</h4><p>Immerse yourselves in art at the <strong class="font-semibold">Prado Museum</strong>, home to masterpieces by Goya, Velázquez, and El Greco. Book tickets online to avoid lines.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (2:00 PM)</h4><p>After lunch, the group can split. Art lovers can continue to the <strong class="font-semibold">Reina Sofía Museum</strong> to see Picasso's "Guernica." Others can enjoy shopping on the Gran Vía or relax in the beautiful <strong class="font-semibold">El Retiro Park</strong>.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (9:00 PM)</h4><p>Experience the passion of Spain with a high-quality <strong class="font-semibold">Flamenco show</strong> at a venue like Cardamomo or Corral de la Morería (book show with dinner).</p></div></div>` },
+                    day3: { title: 'Day 3: Royal Residence & Local Life (Oct 7)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (9:30 AM)</h4><p>Tour the opulent <strong class="font-semibold">Royal Palace of Madrid</strong>, the official residence of the Spanish Royal Family. The armory and grand halls are highlights for history and architecture fans.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:30 PM)</h4><p>Explore the trendy Malasaña neighborhood for lunch and boutique shopping. For Rijul, a tour of the <strong class="font-semibold">Santiago Bernabéu Stadium</strong> (home of Real Madrid) could be an exciting alternative.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (8:00 PM)</h4><p>Enjoy a fantastic steak dinner at <strong class="font-semibold">Casa Lucio</strong> or <strong class="font-semibold">La Cabaña Argentina</strong> to satisfy the group's culinary interests.</p></div></div>` },
+                    day4: { title: 'Day 4: Views & Farewell Flavors (Oct 8)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (10:00 AM)</h4><p>Visit the <strong class="font-semibold">Temple of Debod</strong>, an ancient Egyptian temple dismantled and rebuilt in Madrid. Then, take the cable car (<strong class="font-semibold">Teleférico</strong>) for panoramic city views.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:00 PM)</h4><p>Enjoy a final Spanish meal and some souvenir shopping in the area around Puerta del Sol. Don't miss trying churros with chocolate at <strong class="font-semibold">Chocolatería San Ginés</strong>.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (7:00 PM)</h4><p>Head to Madrid-Barajas (MAD) airport for your evening flight back home.</p></div></div>` }
                 },
                 athens: {
-                    day1: {
-                        title: 'Day 1: Arrival & Plaka Charm (Oct 5)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:00 PM)</h4>
-                                <p>Arrive at Athens International Airport (ATH). Take a pre-booked transfer or the metro to your hotel in the city center (~50 mins).</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (3:30 PM)</h4>
-                                <p>After checking in, take a walk through the charming, historic <strong class="font-semibold">Plaka district</strong>, located at the base of the Acropolis. Explore its narrow streets, shops, and cafes.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (7:30 PM)</h4>
-                                <p>Enjoy a traditional Greek dinner with Acropolis views at a restaurant in Plaka, such as <strong class="font-semibold">Geros Tou Moria</strong>, which often features live music.</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day2: {
-                        title: 'Day 2: The Acropolis & Ancient Agora (Oct 6)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (8:00 AM)</h4>
-                                <p>Start early to beat the crowds and the heat at the <strong class="font-semibold">Acropolis</strong>. A guided tour is highly recommended to understand the history of the Parthenon, the Erechtheion, and other iconic structures.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:00 PM)</h4>
-                                <p>After lunch, visit the magnificent <strong class="font-semibold">Acropolis Museum</strong>, which houses artifacts from the archaeological site. Afterwards, explore the <strong class="font-semibold">Ancient Agora</strong>, the heart of ancient Athens.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (8:00 PM)</h4>
-                                <p>Dine in the vibrant Psiri neighborhood, known for its excellent tavernas and nightlife. Try <strong class="font-semibold">Oineas Restaurant</strong> for modern Greek cuisine.</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day3: {
-                        title: 'Day 3: Temples & Scenic Views (Oct 7)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (10:00 AM)</h4>
-                                <p>Visit the massive <strong class="font-semibold">Temple of Olympian Zeus</strong> and Hadrian's Arch. Then, watch the changing of the guard (Evzones) at Syntagma Square in front of the Hellenic Parliament.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (2:00 PM)</h4>
-                                <p>Group split: Sridhar, Aparna, and Annie could visit the <strong class="font-semibold">National Archaeological Museum</strong>, one of the world's great museums. For a more active option, Rijul might enjoy a historical martial arts class focusing on ancient Greek Pankration if available.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (6:00 PM)</h4>
-                                <p>Take the funicular up <strong class="font-semibold">Lycabettus Hill</strong> to watch a spectacular sunset over Athens and the Aegean Sea, a perfect scenic nature experience.</p>
-                            </div>
-                        </div>
-                        `
-                    },
-                    day4: {
-                        title: 'Day 4: Markets & Farewell (Oct 8)',
-                        content: `
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Morning (9:30 AM)</h4>
-                                <p>Explore the bustling <strong class="font-semibold">Varvakios Agora</strong> (Central Market) to experience the local culture and see the incredible displays of fresh seafood, meat, and produce.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-amber-700">Afternoon (1:00 PM)</h4>
-                                <p>Enjoy a final seafood lunch in the Monastiraki area. Do some last-minute souvenir shopping at the Monastiraki Flea Market.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-lg text-amber-700">Evening (6:00 PM)</h4>
-                                <p>Head to Athens International Airport (ATH) for your flight home.</p>
-                            </div>
-                        </div>
-                        `
-                    }
+                    day1: { title: 'Day 1: Arrival & Plaka Charm (Oct 5)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:00 PM)</h4><p>Arrive at Athens International Airport (ATH). Take a pre-booked transfer or the metro to your hotel in the city center (~50 mins).</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (3:30 PM)</h4><p>After checking in, take a walk through the charming, historic <strong class="font-semibold">Plaka district</strong>, located at the base of the Acropolis. Explore its narrow streets, shops, and cafes.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (7:30 PM)</h4><p>Enjoy a traditional Greek dinner with Acropolis views at a restaurant in Plaka, such as <strong class="font-semibold">Geros Tou Moria</strong>, which often features live music.</p></div></div>` },
+                    day2: { title: 'Day 2: The Acropolis & Ancient Agora (Oct 6)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (8:00 AM)</h4><p>Start early to beat the crowds and the heat at the <strong class="font-semibold">Acropolis</strong>. A guided tour is highly recommended to understand the history of the Parthenon, the Erechtheion, and other iconic structures.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:00 PM)</h4><p>After lunch, visit the magnificent <strong class="font-semibold">Acropolis Museum</strong>, which houses artifacts from the archaeological site. Afterwards, explore the <strong class="font-semibold">Ancient Agora</strong>, the heart of ancient Athens.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (8:00 PM)</h4><p>Dine in the vibrant Psiri neighborhood, known for its excellent tavernas and nightlife. Try <strong class="font-semibold">Oineas Restaurant</strong> for modern Greek cuisine.</p></div></div>` },
+                    day3: { title: 'Day 3: Temples & Scenic Views (Oct 7)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (10:00 AM)</h4><p>Visit the massive <strong class="font-semibold">Temple of Olympian Zeus</strong> and Hadrian's Arch. Then, watch the changing of the guard (Evzones) at Syntagma Square in front of the Hellenic Parliament.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (2:00 PM)</h4><p>Group split: Sridhar, Aparna, and Annie could visit the <strong class="font-semibold">National Archaeological Museum</strong>, one of the world's great museums. For a more active option, Rijul might enjoy a historical martial arts class focusing on ancient Greek Pankration if available.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (6:00 PM)</h4><p>Take the funicular up <strong class="font-semibold">Lycabettus Hill</strong> to watch a spectacular sunset over Athens and the Aegean Sea, a perfect scenic nature experience.</p></div></div>` },
+                    day4: { title: 'Day 4: Markets & Farewell (Oct 8)', content: `<div class="space-y-6"><div><h4 class="font-bold text-lg accent-text-strong">Morning (9:30 AM)</h4><p>Explore the bustling <strong class="font-semibold">Varvakios Agora</strong> (Central Market) to experience the local culture and see the incredible displays of fresh seafood, meat, and produce.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Afternoon (1:00 PM)</h4><p>Enjoy a final seafood lunch in the Monastiraki area. Do some last-minute souvenir shopping at the Monastiraki Flea Market.</p></div><div><h4 class="font-bold text-lg accent-text-strong">Evening (6:00 PM)</h4><p>Head to Athens International Airport (ATH) for your flight home.</p></div></div>` }
                 }
             };
 
@@ -512,7 +334,7 @@
                         <div class="p-4 bg-gray-50 rounded-lg">
                            <div class="flex justify-between items-baseline">
                                 <p class="font-semibold text-gray-800">${item.label}</p>
-                                <p class="text-lg font-bold ${item.value < 0 ? 'text-red-600' : 'text-amber-600'}">${item.value.toFixed(1)}</p>
+                                <p class="text-lg font-bold accent-text-strong">${item.value.toFixed(1)}</p>
                            </div>
                            <p class="text-sm text-gray-600 mt-1">${item.note}</p>
                         </div>
@@ -530,42 +352,23 @@
                     datasets: [{
                         label: 'Value Score (out of 10)',
                         data: Object.values(cityData).map(d => d.score),
-                        backgroundColor: [
-                            'rgba(217, 119, 6, 0.7)',
-                            'rgba(107, 114, 128, 0.5)',
-                            'rgba(107, 114, 128, 0.5)'
-                        ],
-                        borderColor: [
-                            'rgba(217, 119, 6, 1)',
-                            'rgba(107, 114, 128, 1)',
-                            'rgba(107, 114, 128, 1)'
-                        ],
+                        backgroundColor: [],
+                        borderColor: [],
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 10
-                        }
-                    },
+                    scales: { y: { beginAtZero: true, max: 10 } },
                     plugins: {
-                        legend: {
-                            display: false
-                        },
+                        legend: { display: false },
                         tooltip: {
                              callbacks: {
                                 label: function(context) {
                                     let label = context.dataset.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    if (context.parsed.y !== null) {
-                                        label += context.parsed.y.toFixed(1);
-                                    }
+                                    if (label) { label += ': '; }
+                                    if (context.parsed.y !== null) { label += context.parsed.y.toFixed(1); }
                                     return label;
                                 }
                             }
@@ -575,16 +378,14 @@
                         if (elements.length > 0) {
                             const cityIndex = elements[0].index;
                             const city = destinationChart.data.labels[cityIndex];
-                            currentCity = city;
-                            renderCityDetails(city);
-                            renderItinerary(city);
+                            selectCity(city);
                         }
                     }
                 }
             });
 
             const budgetCtx = document.getElementById('budgetChart').getContext('2d');
-            const budgetChart = new Chart(budgetCtx, {
+            new Chart(budgetCtx, {
                 type: 'doughnut',
                 data: {
                     labels: ['Flights', 'Lodging', 'Food & Activities'],
@@ -595,68 +396,100 @@
                     }]
                 },
                  options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                             labels: {
-                                padding: 15,
-                                boxWidth: 12,
-                            }
-                        }
-                    }
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom', labels: { padding: 15, boxWidth: 12, } } }
                 }
             });
 
+            const citySelectorButtons = document.querySelectorAll('.city-button');
             const tabButtons = document.querySelectorAll('.tab-button');
             const itineraryContent = document.getElementById('itinerary-content');
 
+            const updateTheme = (city) => {
+                const theme = themes[city];
+                const root = document.documentElement;
+                root.style.setProperty('--theme-primary', theme.primary);
+                root.style.setProperty('--theme-primary-light', theme.primaryLight);
+                root.style.setProperty('--theme-primary-border', theme.primaryBorder);
+                root.style.setProperty('--theme-text-accent', theme.textAccent);
+            };
+
+            const updateChartHighlight = (selectedCity) => {
+                const theme = themes[selectedCity];
+                const bgColors = [];
+                const borderColors = [];
+
+                destinationChart.data.labels.forEach(city => {
+                    if (city === selectedCity) {
+                        bgColors.push(theme.primary + 'B3'); 
+                        borderColors.push(theme.primary);
+                    } else {
+                        bgColors.push('rgba(156, 163, 175, 0.5)');
+                        borderColors.push('rgba(156, 163, 175, 1)');
+                    }
+                });
+                destinationChart.data.datasets[0].backgroundColor = bgColors;
+                destinationChart.data.datasets[0].borderColor = borderColors;
+                destinationChart.update();
+            };
+            
             const renderItinerary = (city) => {
                 const itineraryTitle = document.querySelector('#itinerary h2');
                 const itinerarySubtitle = document.querySelector('#itinerary p');
+                const day2Tab = document.querySelector('.tab-button[data-tab="day2"]');
+
                 itineraryTitle.textContent = `Your 4-Day ${city} Itinerary`;
                 itinerarySubtitle.textContent = `A balanced plan for ${city} mixing iconic landmarks with culinary experiences and relaxation time.`;
+                
+                if (city === 'Rome') day2Tab.textContent = 'Day 2: Ancient Wonders';
+                if (city === 'Madrid') day2Tab.textContent = 'Day 2: Art & Culture';
+                if (city === 'Athens') day2Tab.textContent = 'Day 2: The Acropolis';
+                
                 renderItineraryTab('day1');
-            }
+            };
 
             const renderItineraryTab = (tabId) => {
-                tabButtons.forEach(button => {
-                    if (button.dataset.tab === tabId) {
-                        button.classList.add('active');
-                    } else {
-                        button.classList.remove('active');
-                    }
-                });
+                tabButtons.forEach(button => button.classList.toggle('active', button.dataset.tab === tabId));
+                
                 const cityItineraryKey = cityData[currentCity].itineraryKey;
                 const data = itineraryData[cityItineraryKey][tabId];
                 itineraryContent.innerHTML = `
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">${data.title}</h3>
                     ${data.content}
                 `;
-            }
+            };
+
+            const selectCity = (city) => {
+                currentCity = city;
+                document.getElementById('summary-city').textContent = city;
+                citySelectorButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.city === city));
+                updateTheme(city);
+                updateChartHighlight(city);
+                renderCityDetails(city);
+                renderItinerary(city);
+            };
+
+            citySelectorButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    selectCity(button.dataset.city);
+                });
+            });
 
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     renderItineraryTab(button.dataset.tab);
                 });
             });
-
-            renderCityDetails('Rome');
-            renderItineraryTab('day1');
-
+            
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('section');
-
             window.addEventListener('scroll', () => {
                 let current = '';
                 sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 80) {
+                    if (pageYOffset >= section.offsetTop - 80) {
                         current = section.getAttribute('id');
                     }
                 });
-
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href').includes(current)) {
@@ -664,6 +497,8 @@
                     }
                 });
             });
+
+            selectCity('Rome');
         });
     </script>
 </body>
