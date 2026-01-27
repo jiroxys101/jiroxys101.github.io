@@ -1,8 +1,0 @@
-/* Apply styles to specific 'li' elements with overdue due dates */
-li.task-list-item.plugin-tasks-list-item[data-task-status-type="TODO"]:has(.task-due[data-task-due^="past-"]),
-li.task-list-item.plugin-tasks-list-item[data-task-status-type="IN_PROGRESS"]:has(.task-due[data-task-due^="past-"]) {
-    background: var(--color-red);
-    border-radius: 10px;
-    padding: 2px 8px;
-    font-weight: bolder;
-}
